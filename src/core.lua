@@ -108,7 +108,6 @@ function GetRGBTextColor( phase, alpha )
 	local r = math.floor(128 + amplitude * math.sin(radians))
 	local g = math.floor(128 + amplitude * math.sin(radians + twopi / 3))
 	local b = math.floor(128 + amplitude * math.sin(radians + (2 * twopi / 3)))
-	rom.log.debug(b)
 	return { r, g, b, alpha or 255 }
 end
 
