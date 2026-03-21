@@ -31,7 +31,7 @@ end
 
 
 mod.RGBTextGenerator = {
-	Speed = 0.20,        -- cycles per second
+	Speed = 0.20,        -- 0.0 - 2.0 cycles per second
 	UpdateInterval = 0.033, -- seconds between color updates
 	Intensity = 0.7,     -- 0.0 = gray, 1.0 = full color
 	SyncCycle = false,  -- true = all RGB text shares the same phase
@@ -50,8 +50,8 @@ local function GetRGBSpeed()
 	if speed < 0 then
 		return 0
 	end
-	if speed > 5 then
-		return 5
+	if speed > 2.0 then
+		return 2.0
 	end
 	return speed
 end
