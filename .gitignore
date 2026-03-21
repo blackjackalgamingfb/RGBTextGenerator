@@ -2,6 +2,7 @@
 /src/LICENSE
 /src/icon.png
 /src/manifest.json
+/src/core2.lua
 
 # For source files used to build packages
 /packages
